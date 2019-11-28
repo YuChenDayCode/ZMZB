@@ -1,0 +1,70 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*****最上层div*****/
+#loginForm1
+{
+     border:solid 1px #AED5FD;
+     position:absolute;
+     top:30%;
+     left:50%;
+     z-index:3000;
+     background-color:#EAF4FE;
+	 width:400px;
+	 height:300px;
+}
+/*********公众平台DIV***********/
+.login1 {
+	position:absolute;
+	top:0%;
+	left:0%;
+	width:200px;
+	height:40px;
+	background-color:#FCF;
+	cursor:pointer;
+}
+/*************个人用户div***************/
+.login2 {
+	position:absolute;
+	top:0%;
+	left:50%;
+	width:200px;
+	height:40px;
+	background-color:#FCF;
+	cursor:pointer;
+}
+/************字体设置**************/
+.f-1 { 
+	border:solid 1px #AED5FD;
+	font-size:20px; 
+	font-weight: bold; 
+	text-align:center;
+	padding-top:20px;
+}
+/************登录--背景图片**************/
+.bgImage {
+	position:absolute;
+	top:21%;
+	left:0%;
+	width:400px;
+	height:30px;
+	background:url(image/login_center.jpg);
+}
+/**************用户名密码位置字体设置********************/
+.login3 {
+	position:absolute;
+	top:40%;
+	left:20%;
+	font-size:18px;
+	font-weight:bold;
+	text-align:right;
+}
+/*********************登录设置**************************/
+.login4 {
+	position:absolute;
+	top:70%;
+	left:20%;
+}
+
+
+

@@ -1,0 +1,120 @@
+BODY {
+	BORDER-RIGHT-WIDTH: 0px; MARGIN: 0px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; FONT-SIZE: 12px; BORDER-LEFT-WIDTH: 0px
+}
+.head_top {
+	WIDTH: 100%; BACKGROUND: url(images/top_bg.gif); HEIGHT: 96px; OVERFLOW: hidden
+}
+.head_top_left {
+	WIDTH: 100%; BACKGROUND: url(images/top.gif) no-repeat; HEIGHT: 96px; OVERFLOW: hidden
+}
+.head_log {
+	POSITION: absolute; COLOR: white; FONT-SIZE: 26px; TOP: 30px; FONT-WEIGHT: bold; LEFT: 10px
+}
+.head_sysname {
+	POSITION: absolute; TOP: 20px; LEFT: 10px
+}
+.head_date {
+	POSITION: absolute; COLOR: white
+}
+.head_login {
+	POSITION: absolute; COLOR: white
+}
+.head_login SPAN {
+	COLOR: yellow
+}
+.sysname {
+	COLOR: white; FONT-SIZE: 30px; FONT-WEIGHT: bold
+}
+.sysname_ext {
+	COLOR: white; FONT-SIZE: 20px; FONT-WEIGHT: bold
+}
+.head_tab {
+	POSITION: absolute; TOP: 68px; LEFT: 210px
+}
+.tab2 {
+	TEXT-ALIGN: center; WIDTH: 97px; BACKGROUND: url(images/tab_2.gif); HEIGHT: 31px; OVERFLOW: hidden; PADDING-TOP: 5px
+}
+.tab1 {
+	TEXT-ALIGN: center; WIDTH: 97px; BACKGROUND: url(images/tab_1.gif); HEIGHT: 31px; OVERFLOW: hidden; PADDING-TOP: 5px
+}
+.tab1 A {
+	COLOR: white; FONT-SIZE: 14px; TEXT-DECORATION: none
+}
+.tab2 A {
+	COLOR: white; FONT-SIZE: 14px; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+.tab1 A:active {
+	COLOR: yellow; FONT-SIZE: 14px; TEXT-DECORATION: none
+}
+.tab2 A:active {
+	COLOR: yellow; FONT-SIZE: 14px; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+.head_split {
+	WIDTH: 100%; BACKGROUND: url(images/h_split.gif); HEIGHT: 5px
+}
+.main {
+	MARGIN: 0px; WIDTH: 100%; BACKGROUND-REPEAT: repeat-x; HEIGHT: 100%; FONT-SIZE: 12px
+}
+.vsplit {
+	BACKGROUND: url(images/v_split.gif)
+}
+.logo {
+	WIDTH: 200px; COLOR: white; FONT-SIZE: 28px; FONT-WEIGHT: bold
+}
+.nav {
+	HEIGHT: 100%; FONT-SIZE: 16px; FONT-WEIGHT: bold; PADDING-TOP: 45px
+}
+.menu {
+	WIDTH: 100%; BACKGROUND: url(images/left_bg.gif); BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; HEIGHT: 100%; COLOR: white
+}
+.subMenu {
+	
+}
+.menu_split {
+	BORDER-RIGHT-WIDTH: 0px; MARGIN: 0px; BACKGROUND: url(images/menu_split.gif) no-repeat; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px
+}
+.title {
+	TEXT-ALIGN: center; PADDING-BOTTOM: 5px; BORDER-RIGHT-WIDTH: 0px; PADDING-LEFT: 5px; WIDTH: 178px; PADDING-RIGHT: 5px; BACKGROUND: url(images/menu_title.gif); BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; HEIGHT: 27px; COLOR: white; FONT-SIZE: 12px; BORDER-LEFT-WIDTH: 0px; PADDING-TOP: 5px
+}
+.setMenu {
+	
+}
+IMG {
+	VERTICAL-ALIGN: middle
+}
+.red {
+	COLOR: red
+}
+.pageheader {
+	MARGIN-TOP: 5px; MARGIN-BOTTOM: 5px
+}
+.login {
+	POSITION: relative; MARGIN: 0px auto; WIDTH: 1002px
+}
+.login_log {
+	POSITION: absolute; TOP: 100px; LEFT: 50px
+}
+.login_left {
+	Z-INDEX: 0; POSITION: absolute; WIDTH: 564px; BACKGROUND: url(images/login_left.gif) no-repeat; HEIGHT: 267px; TOP: 170px; LEFT: 0px
+}
+.login_center {
+	Z-INDEX: 1; POSITION: absolute; WIDTH: 312px; BACKGROUND: url(images/login_center.gif) no-repeat; HEIGHT: 310px; TOP: 150px; LEFT: 564px
+}
+.login_right {
+	Z-INDEX: 0; POSITION: absolute; WIDTH: 79px; BACKGROUND: url(images/login_right.gif) no-repeat; HEIGHT: 266px; TOP: 170px; LEFT: 876px
+}
+.login_tite {
+	MARGIN-TOP: 5px
+}
+.login_form {
+	TEXT-ALIGN: left; MARGIN-TOP: 80px; WIDTH: 100%; MARGIN-LEFT: 40px
+}
+.login_form DIV {
+	MARGIN-BOTTOM: 3px
+}
+.login_input {
+	MARGIN-LEFT: 0px
+}
+.login_msg {
+	TEXT-ALIGN: left; MARGIN-TOP: 20px; COLOR: red; MARGIN-LEFT: 40px
+}

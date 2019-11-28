@@ -1,0 +1,94 @@
+* {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+* HTML UL UL LI A {
+	HEIGHT: 100%
+}
+* HTML UL LI A {
+	HEIGHT: 100%
+}
+* HTML  UL UL LI {
+	MARGIN-BOTTOM: -1px
+}
+BODY {
+	 FONT-FAMILY: Arial, Helvetica, sans-serif;
+}
+#leftmenutop
+{
+width:179px; height:29px; background:url(../../../../skin/default/images/leftmenutop.jpg) no-repeat;
+margin-top:10px;
+}
+#leftmenutoptitle
+{
+	COLOR: #fff;
+	font-size:14px;
+	font-weight:bolder;
+	FONT-FAMILY:"宋体","黑体" ,"微软雅黑";
+	height:20px;
+	width:150px;
+	margin-left:20px;
+	padding-top:7px;
+}
+#theMenu {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0 0 0 0; WIDTH: 200px; PADDING-TOP: 0px;
+}
+UL LI {
+	WIDTH: 179px;
+}
+/**********二级控制**********/
+UL UL LI {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; MARGIN-BOTTOM: 0px; PADDING-BOTTOM: 0px;  WIDTH: 179px; PADDING-TOP: 0px;
+	background-color: #FFF;
+}
+UL UL LI A {
+	PADDING-RIGHT: 6px; DISPLAY: block; FONT-SIZE: 12px; PADDING-BOTTOM: 3px; COLOR: #000; PADDING-TOP: 3px;
+	text-decoration:none;
+}
+UL UL LI A:hover {
+	PADDING-RIGHT: 8px; DISPLAY: block; FONT-SIZE: 12px; PADDING-BOTTOM: 3px; COLOR: #369; PADDING-TOP: 3px; BACKGROUND-COLOR: #eee;
+}
+UL UL UL LI {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; MARGIN-BOTTOM: 0px; PADDING-BOTTOM: 0px; WIDTH: 178px; PADDING-TOP: 0px;
+	BORDER-BOTTOM: #eee 1px solid; BORDER-LEFT-STYLE: none
+}
+/***********************/
+UL UL UL LI A {
+	PADDING-RIGHT: 6px; DISPLAY: block; PADDING-LEFT: 25px; FONT-SIZE: 12px; PADDING-BOTTOM: 3px; COLOR: #000; PADDING-TOP: 3px
+}
+UL UL UL LI A:hover {
+	PADDING-RIGHT: 8px; DISPLAY: block; PADDING-LEFT: 27px; FONT-SIZE: 12px; PADDING-BOTTOM: 3px; COLOR: #369; PADDING-TOP: 3px; BACKGROUND-COLOR: #eee
+}
+LI {
+	LIST-STYLE-TYPE: none
+}
+H2 {
+	MARGIN-TOP: 1.5em;
+}
+/*********一级*********/
+H3.head A {
+	PADDING-RIGHT: 6px; BORDER-TOP: #36a 1px solid; DISPLAY: block; PADDING-LEFT: 10px; 
+	BACKGROUND: url(down.gif) #C3D9FF no-repeat 98% 50%; PADDING-BOTTOM: 3px; COLOR: #333; PADDING-TOP: 3px;font-size:12px;text-decoration:none;
+}
+H3.head A:hover {
+	BACKGROUND: url(down.gif) #6CF no-repeat 98% 50%; COLOR: #000
+}
+H3.selected A {
+	PADDING-RIGHT: 6px; PADDING-LEFT: 10px; BACKGROUND: url(up.gif) #79BCFC no-repeat 98% 50%; PADDING-BOTTOM: 3px; COLOR: #fff; PADDING-TOP: 3px
+}
+H3.selected A:hover {
+	BACKGROUND: url(up.gif) #C3D9FF no-repeat 98% 50%; COLOR: #36a
+}
+/************三级************/
+H4.head A {
+	 PADDING-RIGHT: 6px; BORDER-TOP: #ccc 1px solid; DISPLAY: block; PADDING-LEFT: 15px;
+	 BACKGROUND: url(down.gif) #eee no-repeat 98% 50%; PADDING-BOTTOM: 3px; COLOR: #333; PADDING-TOP: 3px
+}
+H4.head A:hover {
+	BACKGROUND: url(down.gif) #FFE8C4 no-repeat 98% 50%; COLOR: #000;padding-left:17px;
+}
+H4.selected A {
+	PADDING-RIGHT: 6px; PADDING-LEFT: 15px; BACKGROUND: url(up.gif) #FFE8C4 no-repeat 98% 50%; PADDING-BOTTOM: 3px; COLOR: #fff; PADDING-TOP: 3px
+}
+H4.selected A:hover {
+	BACKGROUND: url(up.gif) #FFE8C4 no-repeat 98% 50%; COLOR: #36a
+}

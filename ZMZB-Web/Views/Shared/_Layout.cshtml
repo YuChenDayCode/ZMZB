@@ -1,0 +1,270 @@
+﻿
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - 我的 ASP.NET 应用程序</title>
+    <link href="~/Content/skin/default/css/leftcss.css" rel="stylesheet" />
+    <link href="~/Content/js/acc/css/accordion/accordion.css" rel="stylesheet" />
+    <link href="~/Content/skin/default/css/global.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/Content/js/ztree/zTreeStyle/zTreeStyle.css" type="text/css">
+    <link href="~/Content/skin/default/css/topcss.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        body, html {
+            margin: 0px;
+        }
+
+        h3 {
+            color: #FFF;
+        }
+
+        #leftmenutop {
+            width: 179px;
+            height: 29px;
+            background: url(/Content/skin/default/images/leftmenutop.jpg) no-repeat;
+            margin-top: 10px;
+        }
+
+        .leftOneMenu {
+            position: relative;
+            width: 179px;
+            height: 40px;
+            background-color: #5dbdec;
+            margin-top: 2px;
+            padding-top: 15px;
+            cursor: pointer;
+        }
+
+        .leftTwoMenu {
+            position: relative;
+            width: 179px;
+            height: 40px;
+            background-color: #5dbdec;
+            margin-top: 2px;
+            padding-top: 15px;
+            cursor: pointer;
+        }
+
+        .leftThreeMenu {
+            width: 179px;
+            height: 40px;
+            background-color: #5dbdec;
+            margin-top: 2px;
+            padding-top: 15px;
+            cursor: pointer;
+        }
+
+        .leftFourMenu {
+            width: 179px;
+            height: 40px;
+            background-color: #5dbdec;
+            margin-top: 2px;
+            padding-top: 15px;
+            cursor: pointer;
+        }
+
+        #leftHead:hover {
+            background-image: url(/Content/skin/default/images/menuH.jpg);
+            background-repeat: repeat;
+        }
+
+        #header {
+            height: 100px;
+            width: 100%;
+            position: relative; /*父div的位置设置成相对的*/
+            top: 0;
+        }
+
+            #header #h_menu {
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                height: 50px;
+            }
+
+        #middle {
+            position: absolute;
+            width: 100%;
+            height: auto;
+            top: 100px;
+            bottom: 50px;
+        }
+
+        .left {
+            width: 20%;
+            float: left;
+            height: 100%;
+        }
+
+        .center {
+            height: 100%;
+            margin-left: 20%;
+        }
+
+        #footer {
+            height: 50px;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div id="header">
+            <div id="logo">图珀直免直报系统</div>
+            <div id="topmsg">
+                <div class="msgshow">
+                    <img src="~/Content/skin/default/images/ico/people.png" style="float:left" /><div class="msgshows">管理员</div>
+                </div>
+                <div class="page/msgshow">
+                    <img src="~/Content/skin/default/images/ico/time.png" style="float:left" /><div id="curtime" class="msgshows">2011-05-04 09:40:59</div>
+                </div>
+            </div>
+            <div id="setting">
+                <ul>
+                    <li>
+                        <a onclick="leftFme();" href="leftFrameMenu.html" target="left">
+                            <img src="~/Content/skin/default/images/ico/home.png" onMouseOver="imgchange(this,'/Content/skin/default/images/ico/home1.png')"
+                                 onMouseOut="imgchange(this,'/Content/skin/default/images/ico/home.png')">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="center">
+                            <img src="~/Content/skin/default/images/ico/setting.png" onMouseOver="imgchange(this,'/Content/skin/default/images/ico/setting1.png')"
+                                 onMouseOut="imgchange(this,'/Content/skin/default/images/ico/setting.png')">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="login.htm" target="_parent">
+                            <img src="~/Content/skin/default/images/ico/exit.png" onMouseOver="imgchange(this,'/Content/skin/default/images/ico/exit1.png')"
+                                 onMouseOut="imgchange(this,'/Content/skin/default/images/ico/exit.png')">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="middle">
+            <div class="left">
+                <div id="leftmenutop">
+                    <div id="leftmenutoptitle">管理菜单</div>
+                    @RenderSection("LeftMenu", required: false)
+                </div>
+
+                @*<ul id="treeDemo" class="tree"></ul>*@
+            </div>
+        </div>
+    </div>
+
+    <div class="center">
+        <div class="container body-content">
+            @RenderBody()
+            <hr />
+        </div>
+    </div>
+    <div id="footer">
+        <footer style="border-bottom:10px;">
+            <p>&copy; @DateTime.Now.Year - 我的 ASP.NET 应用程序</p>
+        </footer>
+    </div>
+</body>
+</html>
+
+@Scripts.Render("~/Content/js/jquery1.4.2/jquery-1.5.2.min.js")
+@Scripts.Render("~/Content/js/ztree/jquery-ztree-2.5.min.js")
+@Scripts.Render("~/Content/js/acc/js/accordion.js")
+@RenderSection("scripts", required: false)
+<script>
+    var simpleNodes = [
+        { "id": "00", "pId": "0", "name": "主页", "url": "skin/default/images/top.jpg", "target": "center" },
+        { "id": "01", "pId": "0", "name": "采供血监督管理" },
+        { "id": "01_01", "pId": "01", "name": "临床输血管理" },
+        { "id": "01_01_01", "pId": "01_01", "name": "用血预约登记查询", "url": "ClinicalTransManager/用血预约登记查询.html", "target": "center" },
+        { "id": "01_01_02", "pId": "01_01", "name": "血液库存信息查询", "url": "ClinicalTransManager/血液库存信息查询.html", "target": "center" },
+        { "id": "01-01_03", "pId": "01_01", "name": "血源管理", "url": "ClinicalTransManager/血源管理.html", "target": "center" },
+        { "id": "01_02", "pId": "01", "name": "综合管理" },
+        { "id": "01_02_01", "pId": "01_02", "name": "供血者个人信息管理", "url": "SelectAll/供血者个人信息管理.html", "target": "center" },
+        { "id": "01_02_02", "pId": "01_02", "name": "供血者供血经历管理", "url": "SelectAll/供血者供血经历管理.html", "target": "center" },
+        { "id": "01_02_03", "pId": "01_02", "name": "供血者血液去向检索", "url": "SelectAll/供血者血液去向检索.html", "target": "center" },
+        { "id": "01_02_04", "pId": "01_02", "name": "供血者供血荣誉检索", "url": "SelectAll/供血者荣誉检索.html", "target": "center" },
+        { "id": "01_02_05", "pId": "01_02", "name": "供血者健康评价管理", "url": "SelectAll/供血者健康评价管理.html", "target": "center" },
+        { "id": "01_02_06", "pId": "01_02", "name": "受血者相关信息管理", "url": "SelectAll/受血者相关信息管理.html", "target": "center" },
+        { "id": "01_02_07", "pId": "01_02", "name": "血液制品加工机构管理", "url": "SelectAll/血液制品加工机构管理.html", "target": "center" },
+        { "id": "01_02_08", "pId": "01_02", "name": "血液加工相关信息管理", "url": "SelectAll/血液加工相关信息管理.html", "target": "center" },
+        { "id": "01_02_09", "pId": "01_02", "name": "机构管理", "url": "SelectAll/机构管理.html", "target": "center" },
+        { "id": "01_02_10", "pId": "01_02", "name": "本单位血液信息管理", "url": "SelectAll/本单位血液信息管理.html", "target": "center" },
+        { "id": "02", "pId": "0", "name": "公众平台" },
+        { "id": "02_01", "pId": "02", "name": "查询" },
+        { "id": "03", "pId": "0", "name": "业务平台" },
+        { "id": "03_01", "pId": "03", "name": "查询" },
+        { "id": "04", "pId": "0", "name": "监督平台" },
+        { "id": "04_01", "pId": "04", "name": "查询" },
+        { "id": "05", "pId": "0", "name": "系统设置", "open": false },
+        { "id": "05-01", "pId": "05", "name": "用户管理", "url": "doyin_yangbo/用户列表.html", "target": "center" },
+        { "id": "05-02", "pId": "05", "name": "角色管理", "url": "doyin_yangbo/角色列表.html", "target": "center" },
+        { "id": "05-03", "pId": "05", "name": "机构管理", "url": "组织机构/home.html", "target": "center" }
+    ];
+
+    var zTree1;
+
+    var setting = {
+        expandSpeed: "",
+        isSimpleData: true,
+        treeNodeKey: "id",
+        treeNodeParentKey: "pId",
+        showLine: false
+    };
+
+    $(function () {
+        $('#theMenu').Accordion({
+            active: 'h3.selected',
+            header: 'h3.head',
+            alwaysOpen: false,
+            animated: true,
+            showSpeed: 400,
+            hideSpeed: 600
+        });
+        $('ul ul li').click(function () {
+            var lig = $("#theMenu ul.ul.li");
+            for (var i = 0; i < lig.length; i++) {
+                $('ul ul li a').css('color', '#0FF');
+            }
+        });
+
+        var liS = $("#theMenu ul.ul.li");
+        console.log(liS);
+        for (var i = 0; i < liS.length; i++) {
+            liS.eq(i).Accordion({
+                active: 'li.selected',
+                header: 'li.head',
+                alwaysOpen: false,
+                animated: true,
+                showSpeed: 400,
+                hideSpeed: 800
+            });
+        }
+
+        zTree1 = $("#treeDemo").zTree(setting, simpleNodes);
+        setInterval(() => {
+            var date = new Date(); //日期对象
+            var year = date.getFullYear(),
+                month = date.getMonth() + 1,
+                day = date.getDate(),
+                WeekDay = date.getDay(),
+                Hour = date.getHours(),
+                Minute = date.getMinutes(),
+                Sec = date.getSeconds();
+            var week = ['星期天', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六'];
+            var now = year + "-" + patch(month) + "-" + patch(day) + " " + patch(Hour) + ":" + patch(Minute) + ":" + patch(Sec) + "  " + week[WeekDay];
+            $('#curtime').html(now);
+        }, 1000);
+    });
+    function patch(t) {
+        return t < 10 ? '0' + t : t;
+    }
+    function imgchange(s_img, s_scr) {
+        s_img.src = s_scr;
+    }
+
+</script>

@@ -1,0 +1,135 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
+<html>
+  <head>
+  	<meta http-equiv="content-type" charset="utf-8" content="text/css">
+	<link href="../skin/default/globalright.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="../js/DatePicker/WdatePicker.js"></script>
+    <title>直免直报退费申请</title>
+    
+</head>
+<body>
+    <div class="main">
+	<table id="pageheader" class="pageheader">
+		<tr>
+			<td class="pageheader_left"></td>
+			<td class="pageheader_center" nowrap="nowrap">&nbsp;&nbsp;当前位置：直免直报退费管理>>本地退费管理>>本地直免直报退费申请</td>
+			<td class="pageheader_right"></td>
+		</tr>
+	</table>
+	<form id="form1" action="" method="post">
+		<table class="toolbar">
+			<tr>
+				<td>
+					用血者姓名：<input type="text" /> <font color="red">*</font>&nbsp;&nbsp;&nbsp;&nbsp;
+					住院号：<input type="text" /><font color="red">*</font>&nbsp;&nbsp;&nbsp;&nbsp;
+					病案号：<input type="text" /><font color="red">*</font> 收费人：<input type="text" /> <font color="red">*</font><br/><br/>
+                    证件类型：
+                    <select>
+                    	<!--<option>全部类型</option>-->
+                        <option>身份证</option>
+                        <!--<option>军官证</option>
+                        <option>士官证</option>
+                        <option>军人证</option>
+                        <option>台胞证</option>-->
+                    </select>
+                    证件号码：<input type="text" /><font color="red">*</font>
+					与献血者关系：
+					<select>
+                    	<option>本人</option>
+                        <option>父母</option>
+                        <option>配偶</option>
+                        <option>子女</option>
+                    </select><font color="red">*</font>&nbsp;&nbsp;&nbsp;&nbsp;
+					献血证编号：<input type="text" /> <font color="red">*</font>&nbsp;&nbsp;&nbsp;&nbsp;
+					血液总费用：<input type="text" /> <font color="red">*</font>
+					<br/><br/>
+					用血量:<input type="text" />&nbsp;&nbsp;&nbsp;&nbsp;
+					用血品种:<input type="text" />&nbsp;&nbsp;&nbsp;&nbsp;
+					用血血型:<input type="text" /></br><br/>
+					发血人:<input type="text" />&nbsp;&nbsp;&nbsp;&nbsp;血液来源:<input type="text" />&nbsp;&nbsp;&nbsp;&nbsp;
+					用血科室:<input type="text" />&nbsp;&nbsp;&nbsp;&nbsp;用血医生:<input type="text" /><br/><br/> 血袋号 :<input type="text" />
+					用血时间：&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="startTime" onClick="WdatePicker();" readonly="readonly" class="Wdate" /> &nbsp;&nbsp;&nbsp;&nbsp;
+					是否有用血处方:<label><input type="radio" value="" />是</label><label><input type="radio" value="" />否 </label> &nbsp;&nbsp;&nbsp;&nbsp;
+					是否有用血医嘱:<label><input type="radio" value="" />是</label><label><input type="radio" value="" />否 </label> </br><br/>
+					是否有用血通知单:<label><input type="radio" value="" />是</label><label><input type="radio" value="" />否 </label> &nbsp;&nbsp;&nbsp;&nbsp;
+					是否有用血记录:<label><input type="radio" value="" />是</label><label><input type="radio" value="" />否 </label> &nbsp;&nbsp;&nbsp;&nbsp;
+					是否有用血证明:<label><input type="radio" value="" />是</label><label><input type="radio" value="" />否 </label> <br/><br/>
+					输血科是否确认献血者关系:<label><input type="radio" value="" />是</label><label><input type="radio" value="" />否 </label>&nbsp;&nbsp;&nbsp;&nbsp; 
+					确认人 :<input type="text" />
+					确认时间：&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="startTime" onClick="WdatePicker();" readonly="readonly" class="Wdate" /> 
+					&nbsp;&nbsp;&nbsp;&nbsp;
+					<input class="button" type="submit" value="添加" /><br/><br/>
+				</td>
+			</tr>
+		</table>
+	</form>
+	
+	<table align="center" border="1" cellpadding="3" cellspacing="0" bordercolor="#F9CFCE" style="border-collapse:collapse;">
+  		
+  		<tr>
+    		<td colspan="4" align="center"><strong class="STYLE2">用血者资料</strong></td>
+  		</tr>
+        <tr>
+   			<td width="80" align="right">*住院单位：</td>
+    		<td width="41%">华西医院</td>
+    		<td width="14%" align="right">*血液来源：</td>
+    		<td width="31%">成都市血液中心</td>
+  		</tr>
+    	<tr>
+   			<td width="80" align="right">*患者姓名：</td>
+    		<td width="41%">**********</td>
+    		<td width="14%" align="right">*输注血袋号码：</td>
+    		<td width="31%">Z21323002</td>
+  		</tr>
+		<tr>
+   			<td width="80" align="right">住院号：</td>
+    		<td width="41%">**********</td>
+    		<td width="14%" align="right">病案号：</td>
+    		<td width="31%">**********</td>
+  		</tr>
+		<tr>
+			<td width="80" align="right">*与献血者关系：</td>
+    		<td width="41%">本人</td>
+    		<td width="14%" align="right">*献血证编号：</td>
+    		<td width="31%">***********</td>
+		</tr>
+  		<tr>
+    		<td align="right">*品种：</td>
+    		<td>红细胞悬液</td>
+    		<td align="right">*数量：</td>
+    		<td>400</td>
+  		</tr>
+        <tr>
+    		<td align="right">血费：</td>
+    		<td>500</td>
+    		<td align="right">申请人：</td>
+    		<td>小李</td>
+  		</tr>
+        <tr>
+    		<td align="right">证件类型：</td>
+    		<td>身份证</td>
+    		<td align="right">证件号码：</td>
+    		<td>511622199305230458</td>
+  		</tr>
+	</table>
+	<table  align="center" border="1" cellpadding="3" cellspacing="0" bordercolor="#F9CFCE"  style="border-collapse:collapse; margin-top:5px;">
+  		<tr>
+    		<td height="20" colspan="4" align="center" valign="top">
+    			<div>
+                	<b><font color="red">本次用血费：￥500，可免血费￥500，剩余可免血费：￥200 </font></b>
+    			</div>
+    		</td>
+ 		</tr>
+	</table>
+    <table  align="center" border="1" cellpadding="3" cellspacing="0" bordercolor="#F9CFCE"  style="border-collapse:collapse; margin-top:5px;">
+  		<tr>
+    		<td height="20" colspan="4" align="center" valign="top">
+    			<div>
+                	<input class="button" type="button" value="确 认 打 印" />
+    			</div>
+    		</td>
+ 		</tr>
+	</table>
+</div>
+</body>
+</html>

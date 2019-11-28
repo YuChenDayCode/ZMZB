@@ -1,0 +1,44 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model  ZMZB_Web.Models.Home.HomeIndexViewModel
+
+<div>
+    <h1>Test</h1>
+</div>
+
+@section LeftMenu{
+    <ul id="theMenu">
+        @foreach (var parent in Model.MenuItmes)
+        {
+            <li>
+                <h3 class="head">
+                    <a href="javascript:;">@parent.Describe</a>
+                </h3>
+                <ul>
+                    <li>
+                        <ul class="hasSubs">
+                            <li>
+                                <ul>
+
+                                    @if (parent.SubMenuItem?.Count() > 0)
+                                    {
+                                        foreach (var child in parent.SubMenuItem)
+                                        {
+                                            <li><a href="queryTuifeiguanli/queryReturnMoneyBenDi.html" target="right">@child.Describe</a></li>
+
+                                        }
+                                    }
+
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        }
+
+
+    </ul>
+}

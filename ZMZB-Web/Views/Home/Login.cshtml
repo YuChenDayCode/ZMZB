@@ -1,0 +1,68 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <TITLE>图珀献血直免直报系统</TITLE>
+    <link href="~/Content/login/global.css" rel="stylesheet" />
+
+</head>
+<body style="PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-SIZE: 12px; PADDING-TOP: 0px">
+    <div style="TEXT-ALIGN: center">
+        <div class=login>
+            <div class=login_log></div>
+            <div class=login_left></div>
+            <div class=login_center>
+                <div class=login_tite>
+                </div>
+                <div class=login_form>
+                    <div>用户名： </div>
+                    <div class=login_input>
+                        <input type="text" id="userName" name="name" placeholder="请输入用户名" required="true" />
+
+                    </div>
+                    <div>密&nbsp;&nbsp;&nbsp;&nbsp;码： </div>
+                    <div class=login_input>
+                        <input type="password" id="Password1" name="password" placeholder="请输入密码" />
+
+                    </div>
+                    <div>
+                        <button onclick="login()">登 录</button>
+                        <!--<a href="###" onClick="check();">登 录</a>-->
+                    </div>
+                </div>
+            </div>
+            <div class=login_msg></div>
+        </div>
+        <div class=login_right></div>
+    </div>
+</body>
+</html>
+
+
+@section scripts{
+    <script>
+        $(function () {
+
+        })
+        function login() {
+            var uname = $('#userName').val();
+            var pwd = $('#Password1').val();
+            if (uname == "" || pwd == "") {
+                alert('不能为空');
+                return;
+            }
+            $.post('/Home/Logins', { "username": uname, "pwd": pwd }, function (data) {
+                console.log(data);
+                if (data.code == 200) {
+                    alert("登陆成功");
+                    location.href = "/Home/index";
+                }
+            });
+        }
+    </script>
+}

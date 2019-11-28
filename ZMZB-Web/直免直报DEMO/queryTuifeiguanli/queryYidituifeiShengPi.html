@@ -1,0 +1,180 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
+<html>
+  <head>
+  	<meta http-equiv="content-type" charset="utf-8" content="text/css">
+	<link href="../skin/default/globalright.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="../js/DatePicker/WdatePicker.js"></script>
+    <title>异地退费审批</title>
+    
+</head>
+<body>
+    <div class="main">
+	<table id="pageheader" class="pageheader">
+		<tr>
+			<td class="pageheader_left"></td>
+			<td class="pageheader_center" nowrap="nowrap">&nbsp;&nbsp;当前位置：退费管理>>异地退费>>审批</td>
+			<td class="pageheader_right"></td>
+		</tr>
+	</table>
+	<form id="form1" action="" method="post">
+		<table class="toolbar">
+			<tr>
+				<td>
+                    用血者编号：<input type="text" />
+                    所属地区：
+                    <select>
+                    	<option>全部</option>
+                        <option>四川</option>
+                        <option>重庆</option>
+                        <option>贵州</option>
+                        <option>云南</option>
+                    </select>
+					证件类型：
+					<select id="" name="bloodType">
+						<option>全部</option>
+						<option>身份证</option>
+						<option>军官证</option>
+						<option>士官证</option>
+						<option>军人证</option>
+					</select>
+                    证件号码：<input type="text" /></br>
+                    查询日期：
+                    <input type="text" name="startTime" onClick="WdatePicker();" readonly="readonly" class="Wdate" value=""/> 至
+                    <input type="text" name="endTime" onClick="WdatePicker();" readonly="readonly" class="Wdate" value=""/>
+					<input class="button" type="submit" value="查询" />
+				</td>
+			</tr>
+		</table>
+	</form>
+	
+	<table id="data" class="data">
+	<thead>
+		<tr>
+			<th  width="50" nowrap="nowrap">序号</th>
+			<th  nowrap="nowrap">用血者编号</th>
+			<th  nowrap="nowrap">用血者姓名</th>
+			<th  nowrap="nowrap">证件类型</th>
+            <th  nowrap="nowrap">证件号码</th>
+            <th  nowrap="nowrap">所属地区</th>
+			<th  nowrap="nowrap">用血日期</th>
+            <th  nowrap="nowrap">操作</th>
+		</tr>
+	</thead>
+	<tbody>
+        <tr>
+            <td align="center">
+            	1
+            </td>
+            <td>
+                N0003145
+            </td>
+            <td>
+                ******
+            </td>
+            <td>
+                身份证
+            </td>
+            <td>
+                511622198905632258
+            </td>
+            <td>
+                四川
+            </td>
+            <td>
+               	2012-6-1 
+            </td>
+            <td>
+            	<a href="queryYidituifeiShengPiDetail.html">审批</a>
+            	<!--<a href="queryYidituifeiShengqingDetail.html">申请</a>-->
+            </td>
+        </tr>
+       <tr>
+            <td align="center">
+            	2
+            </td>
+            <td>
+                I0016704
+            </td>
+            <td>
+                ******
+            </td>
+            <td>
+                身份证
+            </td>
+            <td>
+                511622197805632333
+            </td>
+            <td>
+                重庆
+            </td>
+            <td>
+               	2012-5-28 
+            </td>
+            <td>
+            	<a href="###">审批</a>
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
+            	3
+            </td>
+            <td>
+                L0002631
+            </td>
+            <td>
+                ******
+            </td>
+            <td>
+                身份证
+            </td>
+            <td>
+                511626198705642958
+            </td>
+            <td>
+                贵州
+            </td>
+            <td>
+               	2012-6-3
+            </td>
+            <td>
+            	<a href="###">审批</a>
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
+            	4
+            </td>
+            <td>
+                L0003215
+            </td>
+            <td>
+                ******
+            </td>
+            <td>
+                身份证
+            </td>
+            <td>
+                522611198605452238
+            </td>
+            <td>
+                云南
+            </td>
+            <td>
+               	2012-6-7
+            </td>
+            <td>
+            	<a href="###">审批</a>
+            </td>
+        </tr>
+	</tbody>
+	</table>	
+	<table class="pager">
+        <tr>
+            <td align="right">
+                第1页 共1页04条记录
+            </td>
+        </tr>
+	</table>
+</div>
+</body>
+</html>

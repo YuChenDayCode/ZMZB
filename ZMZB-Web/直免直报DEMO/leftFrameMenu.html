@@ -1,0 +1,113 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<HTML>
+<HEAD>
+ <TITLE>Left</TITLE>
+ <META http-equiv=Content-Type content="text/html; charset=gb2312">
+ <META content="MSHTML 6.00.6000.16705" name=GENERATOR>
+	<link rel="stylesheet" href="js/acc/css/accordion/accordion.css" type="text/css">
+    <!--<link href="skin/default/css/global.css" rel="stylesheet" type="text/css">-->
+	<link href="skin/default/css/leftcss.css" rel="stylesheet" type="text/css">
+	<script src="js/acc/js/jquery.js" type=text/javascript></script>	
+	<script src="js/acc/js/accordion.js" type=text/javascript></script>
+	<script type=text/javascript>
+		jQuery().ready(function(){	
+			// applying the settings
+			jQuery('#theMenu').Accordion({
+				active: 'h3.selected',
+				header: 'h3.head',
+				alwaysOpen: false,
+				animated: true,
+				showSpeed: 400,
+				hideSpeed: 600
+			});
+			jQuery('ul ul li').click(function(){
+				var lig = $("#theMenu ul.ul.li"); 
+				for(var i = 0; i < lig.length; i++){
+					jQuery('ul ul li a').css('color','#0FF');
+				}
+			});
+			
+			var liS = $("#theMenu ul.ul.li"); 
+			for(var i = 0; i < liS.length; i++)
+			{            
+				liS.eq(i).Accordion({
+					active: 'li.selected',
+					header: 'li.head',
+					alwaysOpen: false,
+					animated: true,
+					showSpeed: 400,
+					hideSpeed: 800
+				});
+			}   
+		});	
+		function leftOne(msg){
+			if(msg == 1){
+				window.location.href="leftFrame1.html";
+			}
+			if(msg == 2){
+				window.location.href="leftFrame4.html";
+			}
+			if(msg == 3){
+				window.location.href="leftFrame3.html";
+			}
+			if(msg == 4){
+				window.location.href="leftFrame2.html";
+			}
+		}
+	</script>
+    <style type="text/css">
+		h3 {
+			color:#FFF;
+		}
+    	.leftOneMenu {
+			position:relative;
+			width:179px;
+			height:40px;
+			background-color:#5dbdec;
+			margin-top:2px;
+			padding-top:15px;
+			cursor:pointer;
+		}
+		.leftTwoMenu {
+			position:relative;
+			width:179px;
+			height:40px;
+			background-color:#5dbdec;
+			margin-top:2px;
+			padding-top:15px;
+			cursor:pointer;
+		}
+		.leftThreeMenu {
+			width:179px;
+			height:40px;
+			background-color:#5dbdec;
+			margin-top:2px;
+			padding-top:15px;
+			cursor:pointer;
+		}
+		.leftFourMenu {
+			width:179px;
+			height:40px;
+			background-color:#5dbdec;
+			margin-top:2px;
+			padding-top:15px;
+			cursor:pointer;
+		}
+		#leftHead:hover {
+			background-image:url(skin/default/images/menuH.jpg);
+			background-repeat:repeat;
+		}
+    </style>
+</HEAD>
+<body>
+    <div id="leftmenutop">
+    	<div id="leftmenutoptitle">管理菜单</div>
+    </div>
+    <div>
+    	<div id="leftHead" class="leftOneMenu" style="display: none;" onClick="leftOne(1);"><h3>省厅模块</h3></div>
+    	<div id="leftHead" class="leftTwoMenu" style="display: none;" onClick="leftOne(2);"><h3>卫生局模块</h3></div>
+    	<div id="leftHead" class="leftThreeMenu" onClick="leftOne(3);"><h3>血站模块</h3></div>
+    	<div id="leftHead" class="leftFourMenu" onClick="leftOne(4);"><h3>医院模块</h3></div>
+    </div>
+</body>
+</html>

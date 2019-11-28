@@ -1,0 +1,171 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
+<html>
+  <head>
+  	<meta http-equiv="content-type" charset="utf-8" content="text/css">
+	<link href="../skin/default/globalright.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="../js/DatePicker/WdatePicker.js"></script>
+    <title>医院直免直报退费查询</title>
+    
+</head>
+<body>
+    <div class="main">
+	<table id="pageheader" class="pageheader">
+		<tr>
+			<td class="pageheader_left"></td>
+			<td class="pageheader_center" nowrap="nowrap">&nbsp;&nbsp;当前位置：直免直报退费管理>>本地退费管理>>本地直免直报退费查询</td>
+			<td class="pageheader_right"></td>
+		</tr>
+	</table>
+	<form id="form1" action="" method="post">
+		<table class="toolbar">
+			<tr>
+				<td>
+					用血者姓名：<input type="text" /> 
+                    证件类型：
+                    <select>
+                    	<!--<option>全部类型</option>-->
+                        <option>身份证</option>
+                        <!--<option>军官证</option>
+                        <option>士官证</option>
+                        <option>军人证</option>
+                        <option>台胞证</option>-->
+                    </select>
+                    证件号码：<input type="text" />
+					住院号：<input type="text" /> 献血证编码：<input type="text" /> 
+					<br/>
+					
+					查询日期：&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="startTime" onClick="WdatePicker();" readonly="readonly" class="Wdate" /> 
+					到 <input type="text" name="endTime" onClick="WdatePicker();" readonly="readonly" class="Wdate" />
+					<input class="button" type="submit" value="查询" />
+				</td>
+			</tr>
+		</table>
+	</form>
+	
+	<table id="data" class="data">
+	<thead>
+		<tr>
+			<th  width="50" nowrap="nowrap">序号</th>
+            <th  nowrap="nowrap">用血者姓名</th>
+			
+            <th  nowrap="nowrap">证件号码</th>
+            <th  nowrap="nowrap">住院单位</th>
+			<th  nowrap="nowrap">住院号</th>
+			<th  nowrap="nowrap">病案号</th>
+			<th  nowrap="nowrap">献血证编码</th>
+            <th  nowrap="nowrap">输注血袋号码</th>
+            <th  nowrap="nowrap">品种</th>
+            <th  nowrap="nowrap">数量</th>
+			<th  nowrap="nowrap">退费金额(RMB)</th>
+			<th  nowrap="nowrap">剩余可免血费(RMB)</th>
+            <th  nowrap="nowrap">血液来源</th>
+			<th  nowrap="nowrap">申请人</th>
+			<!--<th  nowrap="nowrap">操作</th>-->
+		</tr>
+	</thead>
+	<tbody>
+        <tr>
+            <td align="center">
+            	1
+            </td>
+            <td>
+                **********
+            </td>
+            <td>
+            	511622199305230458
+            </td>
+            <td>
+                华西医院
+            </td>
+			<td>
+                **********
+            </td>
+			<td>
+                **********
+            </td>
+			<td>
+                **********
+            </td>
+			
+            <td>
+            	Z21323002
+            </td>
+            <td>
+            	红细胞悬液
+            </td>
+            <td>
+                400
+            </td>
+            <td>
+                500
+            </td>
+			<td>
+				700
+			</td>
+            <td>
+                成都市血液中心
+            </td>
+            <td>
+                小李
+            </td>
+            <!--<td>
+                <a href="queryBenDiDetail.html" >详细</a>
+            </td>-->
+        </tr>
+       <tr>
+            <td align="center">
+            	2
+            </td>
+            <td>
+                **********
+            </td>
+            <td>
+            	511622198305230468
+            </td>
+             <td>
+                中医院
+            </td>
+			<td>
+                **********
+            </td>
+			<td>
+                **********
+            </td>
+			<td>
+                **********
+            </td>
+            <td>
+            	V115663002
+            </td>
+            <td>
+            	红细胞悬液
+            </td>
+            <td>
+                300
+            </td>
+            <td>
+                450
+            </td>
+			<td>
+				200
+			</td>
+            <td>
+                成都市血液中心
+            </td>
+            <td>
+                小李
+            </td>
+            
+        </tr>
+	</tbody>
+	</table>	
+	<table class="pager">
+        <tr>
+        	<td align="right">
+                第1页 共1页02条记录
+            </td>
+        </tr>
+	</table>
+</div>
+</body>
+</html>

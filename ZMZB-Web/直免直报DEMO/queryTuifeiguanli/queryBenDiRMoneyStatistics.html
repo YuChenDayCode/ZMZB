@@ -1,0 +1,126 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
+<html>
+  <head>
+  	<meta http-equiv="content-type" charset="utf-8" content="text/css">
+	<link href="../skin/default/globalright.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="../js/DatePicker/WdatePicker.js"></script>
+    <title>本地直免直报退费统计</title>
+    
+</head>
+<body>
+    <div class="main">
+	<table id="pageheader" class="pageheader">
+		<tr>
+			<td class="pageheader_left"></td>
+			<td class="pageheader_center" nowrap="nowrap">&nbsp;&nbsp;当前位置：直免直报退费管理>>本地退费管理>>本地直免直报退费统计</td>
+			<td class="pageheader_right"></td>
+		</tr>
+	</table>
+	<form id="form1" action="" method="post">
+		<table class="toolbar">
+		
+			<tr>
+				<td>
+                    单位名称：
+                    	<select>
+                        	<option>全部</option>
+                        	<option>四川省医院</option>
+                            <option>重庆中医院</option>
+                            <option>协和医院</option>
+                            <option>大坪医院</option>
+                        </select>
+						
+                    统计维度：
+                    	<select>
+							<option>按医院统计</option>
+                        	<option>按月统计</option>
+                        	<option>按天统计</option>
+						</select><br/>
+                    查询日期：
+                    <input type="text" name="startTime" onClick="WdatePicker();" readonly="readonly" class="Wdate" value=""/> 至
+                    <input type="text" name="endTime" onClick="WdatePicker();" readonly="readonly" class="Wdate" value=""/>
+					<input class="button" type="submit" value="查 询" />
+				</td>
+			</tr>
+		</table>
+	</form>
+	
+	<table id="data" class="data">
+	<thead>
+		<tr>
+			<th  width="50" nowrap="nowrap">序号</th>
+			<th  nowrap="nowrap">所属区域</th>
+			<th  nowrap="nowrap">单位名称</th>
+			<th  nowrap="nowrap">退费总金额(RMB)</th>
+			<th  nowrap="nowrap">操作</th>
+		</tr>
+	</thead>
+	<tbody>
+        <tr>
+            <td align="center">
+            	1
+            </td>
+            <td>
+              	四川
+            </td>
+            <td>
+                华西医院
+            </td>
+            <td>
+                40000
+            </td>
+            <td>
+                <a href="queryBenDiStaticsDetail.html" >详细</a>
+            </td>
+       </tr>
+       <tr>
+            <td align="center">
+            	2
+            </td>
+            <td>
+              	四川
+            </td>
+            <td>
+                四川省人民医院
+            </td>
+            <td>
+                35000
+            </td>
+            <td>
+                <a href="#" >详细</a>
+            </td>
+        </tr>
+         <tr>
+            <td align="center">
+            	3
+            </td>
+            <td>
+              	四川
+            </td>
+            <td>
+                四川省中医院
+            </td>
+            <td>
+                30000
+            </td>
+            <td>
+                <a href="#" >详细</a>
+            </td>
+        </tr>
+        <tr>
+        	<td colspan="5" align="center">
+                退费总计:105000(RMB)
+            </td>
+        </tr>
+	</tbody>
+	</table>	
+	<table class="pager">
+        <tr>
+        	<td align="right">
+                第1页 共1页03条记录
+            </td>
+        </tr>
+	</table>
+</div>
+</body>
+</html>

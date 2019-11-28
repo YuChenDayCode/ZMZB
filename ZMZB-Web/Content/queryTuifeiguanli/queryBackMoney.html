@@ -1,0 +1,188 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
+<html>
+  <head>
+  	<meta http-equiv="content-type" charset="utf-8" content="text/css">
+	<link href="../skin/default/globalright.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="../js/DatePicker/WdatePicker.js"></script>
+    <title>退费申请</title>
+    
+</head>
+<body>
+    <div class="main">
+	<table id="pageheader" class="pageheader">
+		<tr>
+			<td class="pageheader_left"></td>
+			<td class="pageheader_center" nowrap="nowrap">&nbsp;&nbsp;当前位置：退费管理>>退费申请</td>
+			<td class="pageheader_right"></td>
+		</tr>
+	</table>
+	<form id="form1" action="../queryxueyuanguanli/queryQualityControl.do" method="post">
+		<input type="hidden" name="pageNo" id="pageNo" value="${param.pageNo }"/>
+		<input type="hidden" name="action" id="action1" value="">
+		<table class="toolbar">	
+		</table>
+	</form>
+	
+	<table id="data" class="data">
+	<thead>
+		
+	</thead>
+	<tbody>
+      
+	</tbody>
+	</table>	
+    <table align="center" border="1" cellpadding="3" cellspacing="0" bordercolor="#F9CFCE" style="border-collapse:collapse;">
+  		
+  		<tr>
+    		<td colspan="4">编       号：（自动生成）</td>
+ 		 </tr>
+  		<tr>
+    		<td colspan="4" align="center"><strong class="STYLE2">献血者资料</strong></td>
+  		</tr>
+    	<tr>
+   			<td width="80" align="right">*献血者姓名：</td>
+    		<td width="41%"><input name="username" type="text" id="username" size="20" /></td>
+    		<td width="14%" align="right">*性别：</td>
+    		<td width="31%"><input name="sex" type="radio" id="radio7" value="男" checked="checked" />
+				男
+  				<input type="radio" name="sex" id="radio8" value="女" />女
+			</td>
+  		</tr>
+  		<tr>
+    		<td align="right">*年龄：</td>
+    		<td><input name="old" type="text" id="old" size="20" /></td>
+    		<td align="right">*籍贯：</td>
+    		<td><input name="jiguan" type="text" id="jiguan" size="20" /></td>
+  		</tr>
+  		<tr>
+    		<td align="right">身高：</td>
+    		<td><input name="high" type="text" id="high" size="20" /></td>
+    		<td align="right">*体重：</td>
+    		<td><input name="tizhong" type="text" id="tizhong" size="20" />kg
+			</td>
+  		</tr>
+  		<tr>
+    		<td align="right">*民族：</td>
+    		<td><input name="mc" type="text" id="mc" size="20" /></td>
+    		<td align="right">申请时间：</td>
+    		<td><input name="zdtime" type="text" id="zdtime" size="20" /></td>
+  		</tr>
+	</table>
+ 
+	<table  align="center" border="1" cellpadding="3" cellspacing="0" bordercolor="#F9CFCE" style="border-collapse:collapse; margin-top:5px;" >
+  		<tr>
+    		<td height="32" colspan="4" align="center"><strong class="STYLE2">通讯资料</strong></td>
+  		</tr>
+  		<tr>
+    		<td width="80" align="right">*联系人 ：</td>
+   			<td width="41%"><input name="lxr" type="text" id="lxr" size="20" /></td>
+    		<td width="14%" align="right">*电话 ：</td>
+    		<td width="31%"><input name="tel" type="text" id="tel" size="20" /></td>
+  		</tr>
+  		<tr>
+    		<td height="22" align="right">传真 ：</td>
+    		<td><input name="cz" type="text" id="cz" size="20" /></td>
+    		<td align="right">邮政编码 ：</td>
+    		<td><input name="youb" type="text" id="youb" size="20" /></td>
+  		</tr>
+  		<tr>
+    		<td height="22" align="right">通信地址 ：</td>
+    		<td colspan="3"><input name="addrees" type="text" id="addrees" size="50" /></td>
+  		</tr>
+  		<tr>
+    		<td height="22" align="right">*申请医生 ：</td>
+    		<td><input name="sqys" type="text" id="sqys" size="20" /></td>
+    		<td align="right">*单位 ：</td>
+    		<td><input name="dwei" type="text" id="dwei" size="20" /></td>
+  		</tr>
+  		<tr>
+    		<td height="22" align="right">*电话  ：</td>
+    		<td><input name="ystel" type="text" id="ystel" size="20" /></td>
+    		<td align="right">邮政编码 ：</td>
+    		<td><input name="ysyoub" type="text" id="ysyoub" size="20" /></td>
+  		</tr>
+  		<tr>
+    		<td height="22" align="right">通信地址 ：</td>
+    		<td colspan="3"><input name="ysaddrees" type="text" id="ysaddrees" size="50" /></td>
+  		</tr>
+	</table>
+ 
+	<table  align="center" border="1" cellpadding="3" cellspacing="0" bordercolor="#F9CFCE"  style="border-collapse:collapse; margin-top:5px;">
+  		<tr>
+    		<td height="80" colspan="4" align="center" valign="top">
+    			填表说明：凡是加"*"的选项都为必填项，没有加的为选填项。
+    			<div>
+                	<input name="" type="submit" value="确认无误后提交" onClick="chk()">
+    			</div>
+    		</td>
+ 		</tr>
+	</table>
+</div>
+
+<script type="text/javascript"> 
+function dom(){
+	return document.getElementById(arguments[0]);
+}
+function chk(){
+	if(dom("username").value==""){
+		alert("请输入患者姓名");
+		return false;
+	}else if(dom("old").value==""){
+		alert("请输入年龄");
+		return false;
+	}else if(dom("jiguan").value==""){
+		alert("请输入籍贯");
+		return false;
+	}else if(dom("tizhong").value==""){
+		alert("请输入体重");
+		return false;
+	}else if(dom("mc").value==""){
+		alert("请输入民族");
+		return false;
+	}else if(dom("abo").value==""){
+		alert("ABO/Rh");
+		return false;
+	}else if(dom("zhengduan").value==""){
+		alert("请输入疾病状态");
+		return false;
+	}else if(dom("zhuangtai").value==""){
+		alert("请输入诊断");
+		return false;
+	}else if(dom("lxr").value==""){
+		alert("请输入联系人");
+		return false;
+	}else if(dom("tel").value==""){
+		alert("请输入电话");
+		return false;
+	}else if(dom("sqys").value==""){
+		alert("请输入申请医生");
+		return false;
+	}else if(dom("dwei").value==""){
+		alert("请输入单位");
+		return false;
+	}else if(dom("ystel").value==""){
+		alert("请输入单位电话");
+		return false;
+	}else if(dom("HLA_A").value==""){
+		alert("请输入HLA-A");
+		return false;
+	}else if(dom("HLA_B").value==""){
+		alert("请输入HLA_B");
+		return false;
+	}else if(dom("HLA_B").value=="14"||dom("HLA_B").value=="15"||dom("HLA_B").value=="40"){
+		alert("HLA-B填写错误，请重新填写");
+		return false;
+	}else if(dom("HLA_DR").value==""){
+		alert("请输入HLA_DR");
+		return false;
+	}else if(dom("HLA_DR").value=="3"||dom("HLA_DR").value=="03"){
+		alert("HLA-DR填写错误，请重新填写");
+		return false;
+	}else if(dom("HLA_DQ").value=="3"||dom("HLA_DQ").value=="03"){
+		alert("HLA-DQ填写错误，请重新填写");
+		return false;
+	}
+}
+</script>        
+</body>
+</html>

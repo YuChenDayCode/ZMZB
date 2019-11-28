@@ -1,0 +1,84 @@
+﻿
+<HTML><HEAD><TITLE>血液管理综合信息交互系统</TITLE>
+<META content="text/html; charset=utf-8" http-equiv=Content-Type>
+<META name=GENERATOR content="MSHTML 8.00.6001.19019">
+<META content=no-cache http-equiv=pragma>
+<META content=no-cache http-equiv=cache-control>
+<META content=0 http-equiv=expires>
+<META content="" http-equiv=keywords>
+<META content="" http-equiv=description><LINK rel=stylesheet type=text/css 
+href="login/global.css">
+<SCRIPT type=text/javascript>
+	 document.onkeydown=function(event){            
+	 	var e = event || window.event || arguments.callee.caller.arguments[0];           
+		if(e && e.keyCode==27){ 
+		// 按 Esc                 
+		//要做的事情            
+		}           
+		if(e && e.keyCode==113){ 
+		// 按 F2                  
+		//要做的事情              
+		}                         
+		if(e && e.keyCode==13){ 
+			check();    
+		}        
+	}; 
+	function check(){
+		var userName = document.getElementById("userName");
+		var password = document.getElementById("password");
+		if(userName.value != "" && password.value != ""){
+			if(userName.value == "admin" && password.value =="123"){
+				window.location.href = "indexMenu.html";
+			} 
+			else if(userName.value == "swst" && password.value == "123"){
+				window.location.href = "index1.html";
+			} 
+			else if(userName.value == "hospital" && password.value=="123"){
+				window.location.href = "index2.html";
+			} 
+			else if(userName.value == "bloodstation" && password.value == "123"){
+				window.location.href = "index3.html";
+			}
+			else if(userName.value == "wsj" && password.value == "123"){
+				window.location.href = "index4.html";	
+			}else{
+				alert("请重新输入用户名或密码！！！");
+				userName.focus();
+				return false;
+			}
+		}else{
+			alert("请输入用户名或密码！");
+			userName.focus();
+		}
+	}
+</SCRIPT>
+</HEAD>
+<BODY style="PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-SIZE: 12px; PADDING-TOP: 0px">
+<DIV style="TEXT-ALIGN: center">
+<DIV class=login>
+<DIV class=login_log></DIV>
+<DIV class=login_left></DIV>
+<DIV class=login_center>
+<DIV class=login_tite>
+</DIV>
+<DIV class=login_form>
+    <FORM id=form1 method=post>
+        <DIV>用户名： </DIV>
+        <DIV class=login_input>
+        	<INPUT id=userName name=userName> 
+        </DIV>
+        <DIV>密&nbsp;&nbsp;&nbsp;&nbsp;码： </DIV>
+        <DIV class=login_input>
+        	<INPUT id=password type=password name=password> 
+        </DIV>
+        <DIV><a href="###" onClick="check();">登 录</a></DIV>
+    </FORM>
+</DIV>
+<DIV class=login_msg></DIV>
+</DIV>
+<DIV class=login_right></DIV>
+</DIV>
+</DIV>
+</BODY>
+</HTML>
+	

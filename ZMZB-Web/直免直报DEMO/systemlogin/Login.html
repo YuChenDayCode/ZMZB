@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>登录页面</title>
+<link rel="stylesheet" type="text/css" href="style.css" />
+<script type="text/javascript" src="scripts/jquery-1.4.2.js"></script>
+<script type="text/javascript" src="scripts/common.js"></script>
+</head>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#public").show();	
+		$("#pvte").show();
+		$("#private").hide();	
+	});
+	function gzpt(){
+		$("#public").show();
+		$("#private").hide();
+	}
+	function gryh(){
+		$("#private").show();
+		$("#public").hide();
+	}
+</script>
+<body bgcolor="#FFCCFF">
+<div id="loginForm1">
+    <div class="login1 f-1" onclick="gzpt();" onmouseover="this.style.backgroundColor='#F9F'" 
+        onmouseout="this.style.backgroundColor='#FCF'">公众平台</div>
+    <div id="pvte" onclick="gryh();" class="login2 f-1" onmouseover="this.style.backgroundColor='#F9F'" 
+        onmouseout="this.style.backgroundColor='#FCF'">个人用户</div>
+    <div class="bgImage"></div>
+    <div id="public">
+        <div class="login3">
+            <div style="margin-bottom:10px;">账户名&nbsp;&nbsp;<input id="username" type="text" size="22" /> </div>
+            <div style="margin-top:10px;">密&nbsp;&nbsp;&nbsp;&nbsp;码&nbsp;&nbsp;<input id="pwd" type="text" size="22" /> </div>
+        </div>
+        <div class="login4">
+            <div><a href="../index.html" style="text-decoration:none;cursor:pointer"><img style="border:0px;" src="image/login.jpg"/></a>
+            <span><a href="#" style="text-decoration:none; color:blue;">&nbsp;&nbsp;&nbsp;&nbsp;注册</a></span></div>
+        </div>
+    </div>
+    <div id="private">
+        <div class="login3">
+            <div class="" style="margin-bottom:10px;">账户名：<input id="username" type="text" size="22" /> </div>
+            <div class="" style="margin-top:10px;">登录密码：<input id="pwd" type="text" size="22" /> </div>
+        </div>
+        <div class="login4">
+            <div><a href="../index.html" style="text-decoration:none;cursor:pointer"><img style="border:0px;" src="image/login.jpg"/></a>
+            <span><a href="#" style="text-decoration:none; color:blue;">&nbsp;&nbsp;&nbsp;&nbsp;注册</a></span></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

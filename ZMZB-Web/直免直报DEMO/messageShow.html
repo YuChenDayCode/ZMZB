@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>血液管理综合信息交互系统</title>
+    <link rel="stylesheet" type="text/css" href="skin/default/css/global.css">
+    <link rel="stylesheet" type="text/css" href="skin/default/css/rightcss.css" />
+</head>
+	<body>
+    		<!--
+			<div class="showone">
+				<div class="showonetop">
+					<div class="showonetopleft"></div>
+					<div class="showonetopcenter">
+						<div class="showonetoptext" style="color: yellow">
+							血液申请提醒
+						</div>
+					</div>
+					<div class="showonetopright"></div>
+				</div>
+				<div class="showtext">
+					<table width="100%">
+						<c:if	test="${setting.showBill == '00'}">
+							<c:if test="${not empty BILLS}">
+							<tr>
+							<td><a href="<%=path%>/bills.do?ftype=BILLS&status=00&expiredate=<%=nowDate %>">票据到期提醒【${BILLS}】条</a></td>
+							</tr>
+							</c:if>
+						</c:if>	
+						<c:if	test="${setting.showContract == '00'}">
+							<c:if test="${not empty LOAN}">
+							<tr>
+							<td><a href="<%=path%>/queryLoanContract.do?ftype=LOAN&status=00&fromPage=home&endTime=<%=nowDate %>">贷款到期提醒【${LOAN}】条</a></td>
+							</tr>
+							</c:if>
+						</c:if>
+						<c:if test="${not empty MSGS}">
+						<c:forEach var="msg" items="${MSGS}">
+							<tr>
+							<td>${msg.others }</td>
+							</tr>
+						</c:forEach>
+						</c:if>
+					</table>
+				</div>
+			</div>		
+	-->
+			<!--<div class="showone">
+				<div class="showonetop">
+					<div class="showonetopleft"></div>
+					<div class="showonetopcenter">
+						<div class="showonetoptext">
+							系统消息
+						</div>
+					</div>
+					<div class="showonetopright"></div>
+				</div>
+				<div class="showtext">
+					<table width="100%">
+						<c:if test="${not empty MSGS}">
+						<c:forEach var="msg" items="${MSGS}">
+							<tr>
+								<td><a href="###">公告一条</a></td>
+							</tr>
+                            <tr>
+                            	<td><a href="###">通知一条</a></td>
+                            </tr>-->
+						</c:forEach>
+						</c:if>
+					</table>
+				</div>
+			</div>	
+            
+            <!--<div class="showone">
+				<div class="showonetop">
+					<div class="showonetopleft"></div>
+					<div class="showonetopcenter">
+						<div class="showonetoptext">
+							最新信息
+						</div>
+					</div>
+					<div class="showonetopright"></div>
+				</div>
+				<div class="showtext">
+					<table width="100%">
+						<c:if test="${not empty MSGS}">
+						<c:forEach var="msg" items="${MSGS}">
+							<!--<tr>
+							<td>${msg.others }</td>
+                            	<td><a href="#">第三百二十八期 医院整改</a></td>
+							</tr>
+                            <tr>
+                            	<td><a href="#">第三百二十八期 医院输血科信息</a></td>
+                            </tr>
+						</c:if>	
+						</c:forEach>
+						</c:if>
+					</table>
+				</div>
+			</div>	-->
+            
+     <!--	
+			<div class="showone">
+				<div class="showonetop">
+					<div class="showonetopleft"></div>
+					<div class="showonetopcenter">
+						<div class="showonetoptext">
+							审核提醒消息
+						</div>
+					</div>
+					<div class="showonetopright"></div>
+				</div>
+				<div class="showtext">
+					<table width="100%">
+						<c:if	test="${setting.showFundPlan == '00'}">
+							<c:if test="${not empty FUND_MONTH}">
+								<tr>
+									<td><a href="<%=path%>/workflow.do?ftype=ZJ_01">资金月计划待审核【${FUND_MONTH}】条</a></td>
+								</tr>
+							</c:if>
+						</c:if>						
+						
+						<c:if	test="${setting.showFunPay == '00'}">
+							<c:if test="${not empty FUND_FK}">
+							<tr>
+							<td><a href="<%=path%>/workflow.do?ftype=ZJ_03">资金付款登记待审核【${FUND_FK}】条</a></td>
+							</tr>
+							</c:if>
+						</c:if>	
+						
+						<c:if	test="${setting.ext01 == '00'}">
+							<c:if test="${not empty FUND_TRANS}">
+							<tr>
+							<td><a href="<%=path%>/workflow.do?ftype=TRANS">资金调拨待审核【${FUND_TRANS}】条</a></td>
+							</tr>
+							</c:if>
+						</c:if>	
+						
+						<c:if	test="${setting.ext02 == '00'}">
+							<c:if test="${not empty PAYPRINT}">
+							<tr>
+							<td><a href="<%=path%>/workflow.do?ftype=PAYPRINT">支票重打待审核【${PAYPRINT}】条</a></td>
+							</tr>
+							</c:if>
+						</c:if>	
+					 	<c:if 	test="${setting.showYear == '00'}">
+							<c:if test="${not empty YEAR}">
+							<tr>
+							<td><a href="<%=path%>/workflow.do?ftype=CW_01">年度计划审核【${YEAR}】条</a></td>
+							</tr>	
+							</c:if>
+						</c:if>
+					</table>
+				</div>
+			</div> 
+          -->
+	</body>
+</html>
+
+
+
+
+<body>
+</body>
+</html>

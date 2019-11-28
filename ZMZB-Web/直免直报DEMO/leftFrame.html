@@ -1,0 +1,154 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<HTML>
+<HEAD>
+ <TITLE>Left</TITLE>
+ <META http-equiv=Content-Type content="text/html; charset=gb2312">
+ <META content="MSHTML 6.00.6000.16705" name=GENERATOR>
+	<link rel="stylesheet" href="js/acc/css/accordion/accordion.css" type="text/css">
+    <!--<link href="skin/default/css/global.css" rel="stylesheet" type="text/css">-->
+	<link href="skin/default/css/leftcss.css" rel="stylesheet" type="text/css">
+	<script src="js/acc/js/jquery.js" type=text/javascript></script>	
+	<script src="js/acc/js/accordion.js" type=text/javascript></script>
+	<script type=text/javascript>
+		jQuery().ready(function(){	
+			// applying the settings
+			jQuery('#theMenu').Accordion({
+				active: 'h3.selected',
+				header: 'h3.head',
+				alwaysOpen: false,
+				animated: true,
+				showSpeed: 400,
+				hideSpeed: 600
+			});
+			jQuery('ul ul li').click(function(){
+				var lig = $("#theMenu ul.ul.li"); 
+				for(var i = 0; i < lig.length; i++){
+					jQuery('ul ul li a').css('color','#0FF');
+				}
+			});
+			
+			var liS = $("#theMenu ul.ul.li"); 
+			for(var i = 0; i < liS.length; i++)
+			{            
+				liS.eq(i).Accordion({
+					active: 'li.selected',
+					header: 'li.head',
+					alwaysOpen: false,
+					animated: true,
+					showSpeed: 400,
+					hideSpeed: 800
+				});
+			}   
+		});	
+	</script>
+</HEAD>
+<body>
+    <div id="leftmenutop">
+    	<div id="leftmenutoptitle">管理菜单</div>
+    </div>
+	<ul id="theMenu">
+		<li>
+			<h3 class="head"><a href="javascript:;">血源管理</a></h3>
+			<ul>
+            	<li><a href="queryxueyuanguanli/queryRegister.html" target="right">登记查询</a></li>
+				<li><a href="queryxueyuanguanli/queryMedical.html" target="right">体检查询</a></li>
+				<li><a href="queryxueyuanguanli/queryCollect2.html" target="right">采血查询</a></li>
+                <li><a href="queryxueyuanguanli/queryTesting.html" target="right">检验查询</a></li>
+				<li><a href="queryxueyuanguanli/queryScrap2.html" target="right">报废查询</a></li>
+			</ul>
+		</li>
+     	<li>
+			<h3 class="head"><a href="javascript:;">综合查询</a></h3>
+			<ul>
+				<li><a href="queryZonghechaxun/BloodCollection_BloodStations1.html" target="right">血站采集信息查询</a></li>
+				<li><a href="queryZonghechaxun/BloodOut_BloodStations1.html" target="right">血站出库信息查询</a></li>
+				<li><a href="queryZonghechaxun/BloodCollection_Hosipital1.html" target="right">医院取血信息查询</a></li>
+				<li><a href="queryZonghechaxun/BloodOut_Hosipital1.html" target="right">医院发血信息查询</a></li>
+                <li><a href="queryZonghechaxun/Blood_donorsInfo.html" target="right">献血者信息查询</a></li>
+			</ul>
+		</li>
+		<li>
+			<h3 class="head"><a href="javascript:;">血液跟踪查询</a></h3>
+			<ul>
+				<li><a href="queryXueyegenzongchaxun/queryOutBound2.html" target="right">血站出库跟踪查询</a></li>
+				<li><a href="queryXueyegenzongchaxun/queryWare2.html" target="right">医院入库跟踪查询</a></li>
+			</ul>
+		</li>
+        <li>
+			<h3 class="head"><a href="javascript:;">库存监控</a></h3>
+			<ul>
+				<li><a href="querykucunjiankong/queryInStatistics2.html" target="right">血站当前库存统计</a></li>
+                <li><a href="querykucunjiankong/queryHospStatistics2.html" target="right">医院当前库存统计</a></li>
+			</ul>
+		</li>
+        
+        <li>
+			<h3 class="head"><a href="javascript:;">退血查询</a></h3>
+			<ul>
+				<li><a href="queryTuixuechaxun/queryReturnblood2.html" target="right">退血查询</a></li>
+			</ul>
+		</li>
+        <li>
+			<h3 class="head"><a href="javascript:;">血液管理</a></h3>
+			<ul>
+				<li><a href="queryxueyeguanli/queryProducts2.html" target="right">血液制品安全</a></li>
+				<li><a href="queryxueyeguanli/queryProcess.html" target="right">血液加工与存储</a></li>
+				<li><a href="queryxueyeguanli/queryQualityControl.html" target="right">血液质控</a></li>
+			</ul>
+		</li>
+		 <li>
+			<h3 class="head"><a href="javascript:;">高危人群查询</a></h3>
+			<ul>
+				<li><a href="queryGaoweirenqun/queryHighRisk.html" target="right">高危人群查询</a></li>
+			</ul>
+		</li>
+        <li>
+			<h3 class="head"><a href="javascript:;">退费管理</a></h3>
+			<ul>
+				<li><a href="queryTuifeiguanli/queryReturnMoney2.html" target="right">退费查询</a></li>
+               <!-- <li><a href="queryTuifeiguanli/queryBackMoney.html" target="right">退费申请</a></li>-->
+			</ul>
+		</li>
+        <li>
+			<h3 class="head"><a href="javascript:;">质量投诉</a></h3>
+			<ul>
+				<li><a href="queryzhiliangtousu/querySelectQuality.html" target="right">医院血液质量投诉查询</a></li>
+			</ul>
+		</li>
+        <li>
+			<h3 class="head"><a href="javascript:;">脐血库管理</a></h3>
+			<ul>
+				<li><a href="queryQixueku/inserLifeBank.html" target="right">脐血申请</a></li>
+                <li><a href="queryQixueku/queryLifeBank.html" target="right">脐血出库查询</a></li>
+                <li><a href="queryQixueku/queryKeepLifeBank.html" target="right">自体库</a></li>
+                <li><a href="queryQixueku/queryPublicLifeBank.html" target="right">公共库</a></li>
+			</ul>
+		</li>
+        <li>
+			<h3 class="head"><a href="javascript:;">生物制品管理</a></h3>
+			<ul>
+				<li><a href="queryShenghuozhipin/queryvaccinuminfo.html" target="right">疫苗查询</a></li>
+				<li><a href="queryShenghuozhipin/queryinstory.html" target="right">入库查询</a></li>
+				<li><a href="queryShenghuozhipin/querysales.html" target="right">销售信息查询</a></li>
+			</ul>
+		</li>
+		<li>
+			<h3 class="head"><a href="javascript:;">信息管理</a></h3>
+			<ul>
+			  <li><a href="queryXinxiguanli/queryNotice.html" target="right">公告</a></li>  
+        	  <!--<li><a href="#">通知</a></li>-->
+			</ul>
+		</li>
+        <li>
+			<h3 class="head"><a href="javascript:;">系统管理</a></h3>
+			<ul>
+				<li><a href="queryXitongguanli/queryPersonal.html" target="right">个人信息</a></li>
+				<li><a href="queryXitongguanli/queryRole.html" target="right">角色管理</a></li>
+				<li><a href="queryXitongguanli/queryOrgManage.html" target="right">机构管理</a></li>
+                <li><a href="queryXitongguanli/queryUser.html" target="right">用户管理</a></li>
+				<li><a href="queryXitongguanli/queryLog.html" target="right">日志管理</a></li>
+			</ul>
+		</li>
+	</ul>	
+</body>
+</html>

@@ -1,0 +1,71 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>血液管理综合信息交互系统</title>
+<link href="skin/default/css/global.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="js/ztree/zTreeStyle/zTreeStyle.css" type="text/css">
+<script type="text/javascript" src="js/jquery1.4.2/jquery-1.5.2.min.js"></script>
+<script type="text/javascript" src="js/ztree/jquery-ztree-2.5.min.js"></script>
+<SCRIPT LANGUAGE="JavaScript">
+ <!--
+var simpleNodes =[
+	{ "id":"00", "pId":"0", "name":"主页","url":"skin/default/images/top.jpg","target":"center"},
+	{ "id":"01", "pId":"0", "name":"采供血监督管理"},
+		{ "id":"01_01", "pId":"01", "name":"临床输血管理"},
+			{ "id":"01_01_01", "pId":"01_01", "name":"用血预约登记查询", "url":"ClinicalTransManager/用血预约登记查询.html","target":"center"},
+			{ "id":"01_01_02", "pId":"01_01", "name":"血液库存信息查询", "url":"ClinicalTransManager/血液库存信息查询.html","target":"center"},
+			{ "id":"01-01_03", "pId":"01_01", "name":"血源管理","url":"ClinicalTransManager/血源管理.html","target":"center"},
+		{ "id":"01_02", "pId":"01", "name":"综合管理"},
+			{ "id":"01_02_01", "pId":"01_02", "name":"供血者个人信息管理", "url":"SelectAll/供血者个人信息管理.html","target":"center"},
+			{ "id":"01_02_02", "pId":"01_02", "name":"供血者供血经历管理", "url":"SelectAll/供血者供血经历管理.html","target":"center"},
+			{ "id":"01_02_03", "pId":"01_02", "name":"供血者血液去向检索", "url":"SelectAll/供血者血液去向检索.html","target":"center"},
+			{ "id":"01_02_04", "pId":"01_02", "name":"供血者供血荣誉检索", "url":"SelectAll/供血者荣誉检索.html","target":"center"},
+			{ "id":"01_02_05", "pId":"01_02", "name":"供血者健康评价管理", "url":"SelectAll/供血者健康评价管理.html","target":"center"},
+			{ "id":"01_02_06", "pId":"01_02", "name":"受血者相关信息管理", "url":"SelectAll/受血者相关信息管理.html","target":"center"},
+			{ "id":"01_02_07", "pId":"01_02", "name":"血液制品加工机构管理", "url":"SelectAll/血液制品加工机构管理.html","target":"center"},
+			{ "id":"01_02_08", "pId":"01_02", "name":"血液加工相关信息管理", "url":"SelectAll/血液加工相关信息管理.html","target":"center"},
+			{ "id":"01_02_09", "pId":"01_02", "name":"机构管理", "url":"SelectAll/机构管理.html","target":"center"},
+			{ "id":"01_02_10", "pId":"01_02", "name":"本单位血液信息管理", "url":"SelectAll/本单位血液信息管理.html","target":"center"},
+	{ "id":"02", "pId":"0", "name":"公众平台"},
+		{ "id":"02_01", "pId":"02", "name":"查询"},
+	{ "id":"03", "pId":"0", "name":"业务平台"},
+		{ "id":"03_01", "pId":"03", "name":"查询"},
+	{ "id":"04", "pId":"0", "name":"监督平台"},
+		{ "id":"04_01", "pId":"04", "name":"查询"},
+	{ "id":"05", "pId":"0", "name":"系统设置", "open":false},
+		{ "id":"05-01", "pId":"05", "name":"用户管理","url":"doyin_yangbo/用户列表.html","target":"center"},
+		{ "id":"05-02", "pId":"05", "name":"角色管理","url":"doyin_yangbo/角色列表.html","target":"center"},
+                { "id":"05-03", "pId":"05", "name":"机构管理","url":"组织机构/home.html","target":"center"}
+		];
+ 
+	var zTree1;
+
+	var setting = {
+		expandSpeed: "",
+		isSimpleData : true,
+		treeNodeKey : "id",
+		treeNodeParentKey : "pId",
+		showLine: false
+	};
+
+	$(document).ready(function(){
+		zTree1 = $("#treeDemo").zTree(setting, simpleNodes);
+	});
+
+  //-->
+</SCRIPT>
+	<body>
+		<div class="main">
+			<div class="menu">
+				<div class="title">
+					菜单栏
+				</div>
+				<div>
+					<ul id="treeDemo" class="tree"></ul>
+				</div>
+
+			</div>
+		</div>
+	</body>
+</html>

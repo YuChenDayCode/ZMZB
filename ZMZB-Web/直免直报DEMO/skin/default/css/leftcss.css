@@ -1,0 +1,52 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	padding:0px;
+	FONT-SIZE:12px;
+	MARGIN: 0px;
+	FONT-FAMILY:"宋体","黑体" ,"微软雅黑";
+	background:#13a1e6;
+	text-align:center;
+}
+*
+{
+margin:0px;
+padding:0px;
+}
+#leftmune
+{
+width:185px;
+height:auto;
+margin-left:5px;
+}
+#leftmunetop
+{
+width:179px; height:29px; background:url(../images/leftmenutop.jpg) no-repeat;
+margin-top:10px;
+}
+#leftmunetoptitle
+{
+	COLOR: #fff;
+	font-size:14px;
+	font-weight:bolder;
+	FONT-FAMILY:"宋体","黑体" ,"微软雅黑";
+	height:20px;
+	width:150px;
+	margin-left:20px;
+	padding-top:7px;
+}
+#leftshow
+{
+width:177px;
+background:#5dbdec;
+border-left:1px solid #a1dffd;
+border-right:1px solid #a1dffd;
+height:100%;
+}
+#leftmunebuttom
+{
+width:179px;
+height:8px;
+background:url(../images/leftmunebottom.jpg) no-repeat;
+}

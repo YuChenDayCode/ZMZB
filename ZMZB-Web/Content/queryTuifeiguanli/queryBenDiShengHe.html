@@ -1,0 +1,94 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
+<html>
+  <head>
+  	<meta http-equiv="content-type" charset="utf-8" content="text/css">
+	<link href="../skin/default/globalright.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="../js/DatePicker/WdatePicker.js"></script>
+    <title>本地退费条件审核</title>
+    
+</head>
+<body>
+    <div class="main">
+	<table id="pageheader" class="pageheader">
+		<tr>
+			<td class="pageheader_left"></td>
+			<td class="pageheader_center" nowrap="nowrap">&nbsp;&nbsp;当前位置：退费管理>>本地退费管理>>本地退费条件审核</td>
+			<td class="pageheader_right"></td>
+		</tr>
+	</table>
+	<form id="form1" action="" method="post">
+		<table class="toolbar">
+			<tr>
+				<td>
+                	用血者编号：<input type="text" />
+                    证件类型：
+                    <select>
+                    	<option>全部类型</option>
+                        <option>身份证</option>
+                        <option>军官证</option>
+                        <option>士官证</option>
+                        <option>军人证</option>
+                        <option>台胞证</option>
+                    </select>
+                    证件号码：<input type="text" />
+					<br/>
+					查询日期&nbsp;&nbsp;&nbsp;&nbsp;从<input type="text" name="startTime" onClick="WdatePicker();" readonly="readonly" class="Wdate" /> 
+					到 <input type="text" name="endTime" onClick="WdatePicker();" readonly="readonly" class="Wdate" />
+					<input class="button" type="submit" value="查询" />
+				</td>
+			</tr>
+		</table>
+	</form>
+	
+	<table id="data" class="data">
+	<thead>
+		<tr>
+			<th  width="50" nowrap="nowrap">序号</th>
+            <th  nowrap="nowrap">用血者编号</th>
+            <th  nowrap="nowrap">用血者姓名</th>
+			<th  nowrap="nowrap">用血日期</th>
+            <th  nowrap="nowrap">证件类型</th>
+            <th  nowrap="nowrap">证件号码</th>
+			<th  nowrap="nowrap">状态</th>
+			<th  nowrap="nowrap">操作</th>
+		</tr>
+	</thead>
+	<tbody>
+        <tr>
+            <td align="center">
+            	1
+            </td>
+            <td>
+              	CD8955
+            </td>
+            <td>
+                **********
+            </td>
+            <td>
+                2010-07-09
+            </td>
+            <td>
+            	身份证
+            </td>
+            <td>
+            	511622199305230458
+            </td>
+            <td>
+                未审批
+            </td>
+            <td>
+                <a href="queryBenDiShengHeDetail.html" >详细</a>
+            </td>
+        </tr>
+	</tbody>
+	</table>	
+	<table class="pager">
+        <tr>
+        	<td align="right">
+                第1页 共1页01条记录
+            </td>
+        </tr>
+	</table>
+</div>
+</body>
+</html>
